@@ -103,10 +103,9 @@ div[data-baseweb="tab-list"]{ border-bottom: 1px solid rgba(15,23,42,0.12) !impo
     unsafe_allow_html=True
 )
 
-col_logo, col_title = st.columns([1, 4], vertical_alignment="center")
+col_title = st.container()
 
-with col_logo:
-    st.image("aussfuss_logo.png", width=220)
+
 
 with col_title:
     st.markdown(
