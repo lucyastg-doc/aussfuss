@@ -350,7 +350,7 @@ base = dict(
     descemetitis=descemetitis, hypopyon=hypopyon, total_leucoma=total_leucoma,
     ac=ac, edema=edema, iog=iog, limbal=limbal, opacity=opacity,
     min_thickness_um=min_thickness_um, mean_thickness_um=mean_thickness_um,
-    pachy_uneven=pachy_uneven, thinning_progress_72h=thinning_progress_72h
+    pachy_uneven=pachy_uneven
 )
 
 if calc:
