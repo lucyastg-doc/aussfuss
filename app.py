@@ -275,7 +275,7 @@ with tabs[1]:
                            label_visibility="collapsed")
         crit("Длительность до специфической терапии")
         delay_therapy = st.radio("", options=[0,1,2], key="a_delay",
-                                 format_func=lambda x: {0:"≤7 дней",1:"8–21 день",2:"> 21 дня"}[x],
+                                 format_func=lambda x: {0:"≤7 дней",1:"8–21 день",2:">21 дня"}[x],
                                  label_visibility="collapsed")
         crit("Скорость клинического прогрессирования")
         progress_speed_a = st.radio("", options=[0,1,2], key="a_speed",
