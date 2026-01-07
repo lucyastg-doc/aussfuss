@@ -298,7 +298,7 @@ with tabs[2]:
 
     thinning_progress_72h = 0
     if etiology in ["FUSS (грибковая этиология)", "Неизвестно (посчитать обе шкалы)"]:
-        crit("Прогрессирование истончения за 48–72 ч (FUSS)")
+        crit("Локальные зоны истончения / неравномерность пахиметрии")
         thinning_progress_72h = st.radio("", options=[0,1], key="thin72",
                                          format_func=lambda x: "нет" if x==0 else "есть",
                                          label_visibility="collapsed")
