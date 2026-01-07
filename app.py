@@ -296,12 +296,7 @@ with tabs[2]:
                             format_func=lambda x: "нет" if x==0 else "есть",
                             label_visibility="collapsed")
 
-    thinning_progress_72h = 0
-    if etiology in ["FUSS (грибковая этиология)", "Неизвестно (посчитать обе шкалы)"]:
-        crit("Локальные зоны истончения / неравномерность пахиметрии")
-        thinning_progress_72h = st.radio("", options=[0,1], key="thin72",
-                                         format_func=lambda x: "нет" if x==0 else "есть",
-                                         label_visibility="collapsed")
+   
 
 with tabs[3]:
     st.markdown("### Конфокальная микроскопия")
