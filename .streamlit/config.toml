@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#7A4BAE"        # фиолетовый
+backgroundColor = "#E9F7EF"     # салатовый фон
+secondaryBackgroundColor = "#E9F7EF"
+textColor = "#0F172A"
+font = "sans serif"
