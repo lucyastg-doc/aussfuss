@@ -311,7 +311,7 @@ with tabs[3]:
                           label_visibility="collapsed")
         crit("Глубина залегания гифов и/или спор")
         hyphae_depth = st.radio("", options=[0,1,2,3], key="hy_depth",
-                        format_func=lambda x: {0:"нет",1:"эпителий/поверхностная строма",2:"средняя строма",3:"глубокая строма"}[x],
+                        format_func=lambda x: {0:"нет/не визуализируется",1:"эпителий/поверхностная строма",2:"средняя строма",3:"глубокая строма"}[x],
                         label_visibility="collapsed")
 
     if etiology in ["AUSS (акантамебная этиология)", "Неизвестно (посчитать обе шкалы)"]:
@@ -326,7 +326,7 @@ with tabs[3]:
                          label_visibility="collapsed")
         crit("Глубина залегания цист/трофозоитов")
         amoeba_depth = st.radio("", options=[0,1,2,3], key="amoeba_depth",
-                                format_func=lambda x: {0:"нет",1:"эпителий/поверхностная строма",2:"средняя строма",3:"глубокая строма"}[x],
+                                format_func=lambda x: {0:"нет/не визуализируется",1:"эпителий/поверхностная строма",2:"средняя строма",3:"глубокая строма"}[x],
                                 label_visibility="collapsed")
 
         crit("Признаки кератоневрита (конфокальная микроскопия)")
