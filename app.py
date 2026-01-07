@@ -104,13 +104,19 @@ div[data-baseweb="tab-list"]{ border-bottom: 1px solid rgba(15,23,42,0.12) !impo
 )
 
 col_logo, col_title = st.columns([1, 4], vertical_alignment="center")
-with col_logo: 
-st.image("aussfuss_logo.png", width=220)
-with col_title:
-    st.markdown("<div class='aussfuss-title'><span class='purple'>AUSS</span> <span class='divider'>/</span> <span class='green'>FUSS</span></div>", unsafe_allow_html=True)
-    st.markdown('<div class="aussfuss-subtitle">Оценка степени тяжести поражения роговицы и выбор тактики лечения</div>', unsafe_allow_html=True)
 
-st.markdown("")
+with col_logo:
+    st.image("aussfuss_logo.png", width=220)
+
+with col_title:
+    st.markdown(
+        "<div class='aussfuss-title'>"
+        "<span class='purple'>AUSS</span> / "
+        "<span class='green'>FUSS</span>"
+        "</div>",
+        unsafe_allow_html=True
+    )
+
 left, right = st.columns([3,1], vertical_alignment="center")
 with left:
     st.markdown('<span class="pill">Веб-версия (без персональных данных)</span>', unsafe_allow_html=True)
